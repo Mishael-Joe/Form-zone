@@ -1,0 +1,748 @@
+
+:root {
+    --primary-color: radial-gradient(circle, rgba(63,94,251,1) 9%, rgba(177,226,255,1) 92%);;
+    --secondary-color: linear-gradient(0deg, rgba(34,193,195,1) 50%, rgba(237,244,255,1) 100%);
+    --dack-color: rgba(0, 0, 0, 0.897);
+    --text-color: white;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    line-height: 1.8;
+    width: 100%;
+    font-family: 'Antonio', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+img {
+    transition: 700ms;
+}
+a:hover {
+    text-decoration: underline 3px;
+    transition: 700ms linear;
+}
+
+/*
+font-family: 'Antonio', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Source Sans Pro', sans-serif
+*/
+
+/*---------nav-section-----------*/
+nav a {
+    color: var(--dack-color);
+}
+nav .navbar ul {
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+    list-style: none;
+    padding-top: 15px;
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+    color: var(--dack-color);
+}
+nav .container {
+    display: flex;
+    justify-content: space-around;
+}
+nav .logo {
+    font-weight: bolder;
+    font-size: 2rem;
+    color: var(--dack-color);
+    padding-right: 39rem;
+}
+nav .logo a {
+    text-decoration: none;
+}
+/*-------nav-section-ends-----------*/
+
+/*--------header-section-----------*/
+header {
+    height: 70%;
+    width: 100%;
+    background: var(--primary-color);
+    color: var(--text-color);
+    font-size: 2.5em;
+    padding: 40px;
+}
+header .container {
+    display: flex;
+    justify-content: space-around;
+}
+header p {
+    font-size: 0.5em;
+}
+header .divtext {
+    width: 50%;
+}
+header img {
+    height: 40%;
+    width: 50%;
+    margin-bottom: 0em;
+    animation: slideInFromLeft 2s linear;
+    animation-delay: 700ms;
+}
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(700px);
+    }
+}
+header .divtext button {
+    background: var(--secondary-color);
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 0.3em;
+    margin-top: 20px;
+    border: 0px;
+    transition: 700ms;
+}
+header .divtext button:hover {
+    transition: 700ms;
+    width: 85px;
+    height: 40px;
+    background: var(--primary-color);
+    border: 1px solid var(--text-color);
+}
+/*---------header---section---ends--------*/
+
+/*----------about---us-------------*/
+.about-us {
+    height: 55%;
+    width: 100%;
+    line-height: 1.7;
+}
+.about-us .container {
+    padding: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.about-us img {
+    height: 0%;
+    width: 33%;
+    margin-right: 3em;
+}
+.about-us .divtext  {
+    width: 50%;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding-top: 45px;
+}
+.about-us h2 {
+    color: var(--secondary-color);
+    font-size: 2em;
+    font-weight: bold;
+}
+/*----------about---us----ends---------*/
+
+/*----------our-------services--------*/
+.our-services {
+    height: 30em;
+    width: 100%;
+    text-align: center;
+    margin-top: 5em;
+    padding-top: 2em;
+    font-size: larger;
+    color: var(--text-color);
+}
+.our-services h2 {
+    height: 4em;
+    width: 100%;
+    text-align: center;
+    background: var(--primary-color);
+    padding-top: 1em;
+    font-size: larger;
+    color: var(--text-color);
+}
+.our-services p {
+    line-height: 1.5;
+    font: 0.8em sans-serif;
+}
+.our-services .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 7em;
+    gap: 5em;
+    text-align: center;
+    margin: 6em;
+    font-size: large;
+    color: var(--dack-color);
+}
+.our-services .container .cards {
+    border-radius: 1em;
+    box-shadow: 0.5px 1px 1px 0.5px ;
+    width: 80%;
+    height: 140%;
+    line-height: 2em;
+    padding: 1em;
+}
+/*----------our----services----ends---------*/
+
+/*---------services-----packages------*/
+.services-packages {
+    height: 90%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10em;
+}
+.services-packages h2 {
+    font-weight: bold;
+    font-size: 2em;
+}
+.services-packages .card h2 {
+    color: var(--text-color);
+    background: var(--secondary-color);
+    font-weight: 550;
+    border-radius: 0.2em;
+}
+.services-packages .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.services-packages .container .card {
+    text-align: center;
+    margin: 5rem 3rem;
+    padding-bottom: 2rem;
+    max-width: 350px;
+    border-radius: 0.5em;
+    box-shadow: 5px 9px 20px -10px;
+    line-height: 1.5;
+}
+.services-packages .card h3 {
+    font-size: 2.5em;
+    font-weight: 300;
+}
+.services-packages .card p {
+    font-size: 1.3em;
+    color: var(--secondary-color);
+}
+/*-------services---packages--ends--------*/
+
+/*----------request----form--------*/
+.request-form {
+    height: 80%;
+    width: 100%;
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+.request-form .container {
+    position: absolute;
+    padding: 4em 8em;
+    display: flex;
+    gap: 6em;
+}
+.request-form .container .divtext {
+    position: relative;
+    top: 3em;
+}
+.request-form .container .divtext h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+.request-form .container .divtext p {
+    font-size: 1em;
+    padding-right: 10px;
+}
+.request-form .container form {
+    font-size: 1em;
+    text-transform: uppercase;
+    width: 60%;
+    line-height: 2;
+    margin: -5px auto;
+}
+.request-form input[type="text"],
+.request-form input[type="email"],
+.request-form textarea,
+.request-form #dropdown,
+.request-form button {
+    height: 30px;
+    width: 30em;
+    border: 1px white solid;
+    border-bottom: 2px solid gray;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-left: 7px;
+}
+.request-form textarea {
+    height: 5em;
+}
+.request-form button {
+    margin-top: 0.5em;
+    background: var(--secondary-color);
+    border-radius: 0.5em;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.request-form button:hover {
+    background: var(--primary-color);
+    border: 2px solid var(--text-color);
+}
+/*----------request----form----ends----------*/
+
+/*------------clients--work----------*/
+.clients-works {
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    margin-top: 5em;
+}
+.clients-works h1 {
+    height: 4em;
+    width: 100%;
+    text-align: center;
+    background: var(--primary-color);
+    padding-top: 1em;
+    font-size: larger;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+.clients-works .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    min-width: 10%;
+    max-height: 70%;
+    min-height: 10%;
+    gap: 0em;
+    padding: 5em;
+}
+.clients-works .cards img {
+    height: 80%;
+    width: 80%;
+    border-radius: 0.5em;
+}
+.clients-works .cards img:hover {
+    height: 90%;
+    width: 90%;
+}
+/*------------clients--work--ends------------*/
+
+/*--------contacts-------*/
+.contacts {
+    height: 100%;
+    width: 100%;
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding-top: 5em;
+    text-align: center;
+}
+.contacts .container {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+.contacts form {
+    position: relative;
+    left: 15em;
+    font-size: 1.2em;
+    max-width: 50%;
+    text-align: left;
+}
+.contacts input[type="text"],
+.contacts input[type="email"],
+.contacts textarea,
+.contacts button {
+    width: 100%;
+    height: 3em;
+    margin: 0.5em auto;
+    border: 1px solid skyblue;
+    padding-left: 10px;
+}
+.contacts textarea {
+    height: 7em;
+}
+.contacts button {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    border: 0px;
+    border-radius: 1em;
+}
+.contacts button:hover {
+    background: var(--primary-color);
+    font-weight: bolder;
+    border: 2px solid var(--text-color);
+}
+/*--------contacts--ends-----*/
+
+/*---------footer-----------*/
+footer {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    padding-top: 1.2em;
+}
+/*-----------footer---ends---------*/
+
+@media screen and (max-width: 768px) {
+    nav {
+        width: 100%;
+    }
+    nav .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0em 2em;
+    }
+    nav .logo {
+        font-size: 2em;
+        padding-right: 0rem;
+    }
+    .navbar a {
+        font-size: 0.7em;
+    }
+    nav .navbar ul {
+        gap: 0.4em;
+    }
+    header {
+        height: 120%;
+        width: 100%;
+    }
+    header .divtext {
+        width: 100%;
+    }
+    header .container {
+        line-height: 1.5;
+        font-size: 2.5rem;
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1em;
+        text-align: center;
+    }
+    header span {
+        font-size: 0.8em;
+    }
+    header .divtext button {
+        width: 6em;
+    }
+    header img {
+        width: max(100px, 75vw);
+        position: relative;
+        bottom: 2rem;
+    }
+    .about-us {
+        height: 100%;
+        width: 100%;
+    }
+    .about-us .container {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 1em;
+    }
+    .about-us .divtext {
+        width: 100%;
+    }
+    .about-us img {
+        width: max(100px, 50vw);
+        position: relative;
+        left: 3em;
+    }
+    .our-services {
+        height: 110%;
+    }
+    .our-services .container .cards {
+        border-radius: 1em;
+        width: 100%;
+        height: 100%;
+    }
+    .our-services .container {
+        gap: 3em;
+        margin: 3em;
+    }
+    .services-packages {
+        height: 170%;
+        width: 100%;
+        text-align: center;
+        margin-top: 0px;
+        padding: 0px;
+    }
+    .services-packages .container {
+        display: block;
+
+    }
+    .services-packages .container .card {
+        font-size: 0.7rem;
+        line-height: 2;
+        margin: 4em auto;
+    }
+    .request-form {
+        height: 150%;
+        width: 100%;
+    }
+    .request-form .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1em auto;
+        padding: 4rem;
+        gap: 5em;
+    }
+    .request-form input[type="text"],
+    .request-form input[type="email"],
+    .request-form textarea,
+    .request-form #dropdown,
+    .request-form button {
+        height: 25px;
+        width: 20em;
+        border: 1px white solid;
+        border-bottom: 2px solid gray;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding-left: 7px;
+    }
+    .request-form textarea {
+        height: 3em;
+    }
+    .request-form .container form {
+        margin: 0px;
+    }
+    .request-form .container .divtext p {
+        padding-right: 90px;
+    }
+    .clients-works {
+        width: 100%;
+        height: 150%;
+    }
+    .clients-works .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        margin-top: -3rem;
+    }
+    .clients-works .card1 img {
+        width: max(100px, 40vw);
+    }
+    .clients-works .card2 img {
+        width: max(100px, 40vw);
+    }
+    .clients-works .card3 img {
+        width: max(100px, 40vw);
+    }
+    .clients-works .cards img:hover {
+        width: max(100px, 45vw);
+    }
+    .contacts {
+        height: 100%;
+        width: 100%;
+    }
+    .contacts form {
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        left: 3em;
+    }
+    .contacts form input[type="text"],
+    .contacts form input[type="email"],
+    .contacts form textarea,
+    .contacts form button {
+        height: 1.5rem;
+        width: 35em;
+        font-size: 10px;
+    }
+    .contacts form textarea {
+        height: 2.5rem;
+    }
+    .contacts h1 {
+        position: relative;
+        left: -1em;
+    }
+}
+@media screen and (max-width: 460px) {
+    nav {
+        width: 100%;
+    }
+    nav .container {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0em 2em;
+    }
+    nav .logo {
+        display: none;
+    }
+    .navbar a {
+        font-size: 0.6rem;
+    }
+    nav .navbar ul {
+        gap: 0.4em;
+    }
+    header {
+        height: 100%;
+        width: 100%;
+    }
+    header .divtext {
+        width: 100%;
+    }
+    header .container {
+        line-height: 1.8;
+        font-size: 2rem;
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2em;
+        text-align: center;
+    }
+    header span {
+        font-size: 0.9em;
+        line-height: 1;
+    }
+    header .container .divtext p {
+        padding-top: 1.5em;
+    }
+    header .divtext button {
+        width: 7em;
+        font-size: 0.6rem;
+        height: 1.5rem;
+    }
+    header .divtext button:hover {
+        transition: 700ms;
+        width: 7.5em;
+        height: 2rem;
+        background: var(--primary-color);
+        border: 1px solid var(--text-color);
+    }
+    header img {
+        width: max(100px, 75vw);
+    }
+    .about-us {
+        height: 120%;
+        width: 100%;
+        margin: 0rem;
+        padding: 0rem;
+    }
+    .about-us .container {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 1em;
+    }
+    .about-us .divtext {
+        font-size: 0.9rem;
+        padding: 0rem;
+    }
+    .about-us img {
+        width: max(100px, 60vw);
+        position: relative;
+        left: 0rem;
+    }
+    .our-services {
+        height: 140%;
+        width: 100%;
+        margin: 0rem;
+    }
+    .our-services .container .cards {
+        border-radius: 1em;
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+    }
+    .our-services .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1em;
+        margin: 1em;
+    }
+    .services-packages {
+        height: 130%;
+        width: 100%;
+        text-align: center;
+        margin-top: 0px;
+        padding: 0px;
+    }
+    .services-packages .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .services-packages .container .card {
+        font-size: 0.6rem;
+        line-height: 1.5;
+        margin: 2em auto;
+        width: 10rem;
+    }
+    .request-form {
+        height: 100%;
+        width: 100%;
+    }
+    .request-form .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0em ;
+        padding: 0rem 2rem;
+        gap: 7rem;
+    }
+    .request-form .container .divtext h1 {
+        font-size: 1.5rem;
+    }
+    .request-form input[type="text"],
+    .request-form input[type="email"],
+    .request-form textarea,
+    .request-form #dropdown,
+    .request-form button {
+        height: 1.2rem;
+        width: 15rem;
+        font-size: 10px;
+    }
+    .request-form textarea {
+        height: 3rem;
+    }
+    .request-form .container form {
+        font-size: 0.7rem;
+    }
+    .request-form .container .divtext p {
+        padding-right: 90px;
+        font-size: 0.8rem;
+    }
+    .clients-works {
+        width: 100%;
+        height: 130vh;
+    }
+    .clients-works .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        margin: -3rem -2rem ;
+    }
+    .clients-works .card1 img {
+        width: max(100px, 55vw);
+    }
+    .clients-works .card2 img {
+        width: max(100px, 55vw);
+    }
+    .clients-works .card3 img {
+        width: max(100px, 55vw);
+    }
+    .clients-works .cards img:hover {
+        width: max(100px, 60vw);
+        transition: 1s;
+    }
+    .contacts {
+        height: 65%;
+        width: 100%;
+    }
+    .contacts .container h1 {
+        font-size: 1.8rem;
+        position: relative;
+        left: -2em;
+    }
+    .contacts form {
+        position: relative;
+        left: 3em;
+        font-size: 0.6rem;
+    }
+    .contacts form input[type="text"],
+    .contacts form input[type="email"],
+    .contacts form textarea,
+    .contacts form button {
+        height: 1.5rem;
+        width: 20em;
+        font-size: 10px;
+    }
+    .contacts form textarea {
+        height: 3rem;
+    }
+}
